@@ -1,0 +1,281 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     
+}
+
+/* la grille d'element parent*/
+
+.grille{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-auto-flow: row dense;
+
+    grid-template-columns: 270px 1fr;
+    grid-template-rows: 150px 1fr 150px;
+    grid-template-areas: 
+    'sidebar header'
+    'sidebar main'
+    'footer footer';
+}
+
+
+/* la partie pour definir le sidebar header section footer */
+
+.sidebar{
+    background: rgb(228, 231, 229);
+    grid-area: sidebar;
+    padding: 12px;
+}
+.entete{
+    background: rgb(243, 247, 244);
+    grid-area: header;
+}
+.contenu{background: rgb(243, 247, 244);
+    grid-area: main;
+}
+.pied-de-page{
+    background:rgb(245, 245, 249);
+    grid-area: footer;
+}
+
+.fa-circle-play{
+    color: rgb(0, 3, 11);
+}
+
+/* le navbar (en-tete) */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+   
+
+}.navbar-btn{
+    display: flex;
+    gap: 20px;   
+}
+.entete button{
+    height: 25px;
+    width: 100px;
+    border-radius: 2px;
+    margin-top: 4px;
+}
+.sous-btn{
+    display: flex;
+    justify-content: space-between;
+}.para{
+    display: flex;
+    gap: 30px;
+    margin-top: 9px;
+    margin-right: 20px;
+}
+
+
+.barre-de-recherche input{
+    height: 30px;border-radius: 2px;width: 200px;
+    padding: 9px;
+    border: 1px solid black;
+}
+
+
+
+/* sidebar*/
+
+
+.sidebar-icons a{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-top: 11px;
+    background-color: rgb(228, 231, 229);
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+/* la partie main css dashbord*/
+
+
+.contenu-table{
+    border-collapse: collapse;
+    font-weight: 0.9em;
+    min-width: 300px;
+    margin-left: 30px;
+    padding: 0 4rem 1rem;
+    z-index: 3;
+}.contenu-table td{
+    padding:9px 80px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+.contenu-table tr:nth-child(odd) td{
+    background:white;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.contenu-table tr :nth-child(odd) td:first-child{
+    border-left: 1px solid #e5e5e5;
+    border-radius: 8px 0 0 8px;
+}
+
+.contenu-table tr :nth-child(odd) td:last-child{
+    border-right: 1px solid #e5e5e5;
+    border-radius: 0 8px 8px 0;
+}
+.contenu-table td:last-child{
+    text-align: right;
+}
+
+/*footer*/
+
+.pied-de{
+    display: flex;
+}.pied-de p{
+    padding: 32px;
+    position: relative;
+    top: 30px;
+
+}
+
+
+.icons-footer{
+    justify-content:center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    bottom: 30px;
+    font-size: 20px;
+}
+.footer-icons-gauche{
+    margin-left: 80%;
+    gap: 20px;
+}
+.footer-icons-centre{
+    position: fixed;
+    gap: 22px;
+}
+
+/* LA PARTIE HOME 2EM PAGE/*
+
+
+
+/* la partie main css HOME PAGE*/
+
+
+
+
+.carre1{
+background: #1a1a1a;
+ background-image: url(./IMAGE\ \(1\).png);
+    background-size: cover;
+}
+.carre2{
+    background: #1a1a1a;
+    background-image: url(./IMAGE\ \(2\).png);
+    background-size: cover;
+}
+.carre3{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(3\).png);
+    background-size: cover;
+}
+.carre4{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(4\).png);
+    background-size: cover;
+}
+.carre5{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(5\).png);
+    background-size: cover;
+}
+.carre6{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(6\).png);
+    background-size: cover;
+}
+.carre7{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(7\).png);
+    background-size: cover;
+}
+.carre8{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(8\).png);
+    background-size: cover;
+}
+.carre9{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(9\).png);
+    background-size: cover;
+}
+.carre10{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(10\).png);
+    background-size: cover;
+}
+.carre11{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(11\).png);
+    background-size: cover;
+}
+.carre12{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(12\).png);
+    background-size: cover;
+}
+.carre13{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(13\).png);
+    background-size: cover;
+}
+.carre14{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(14\).png);
+    background-size: cover;
+}
+.carre15{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(15\).png);
+    background-size: cover;
+}
+.carre16{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(16\).png);
+    background-size: cover;
+}
+.carre17{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(17\).png);
+    background-size: cover;
+}
+.carre18{
+    background: #1a1a1a;
+     background-image: url(./IMAGE\ \(18\).png);
+    background-size: cover;
+}
+
+
+.gril{
+    display: grid;
+    gap: 12px;
+    height: 60vh;
+    grid-template-columns: repeat(6,180px);
+    grid-template-rows: repeat(3, 190px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+    bottom: 22px;
+    overflow-y:scroll ;
+}
+.gril carre{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
